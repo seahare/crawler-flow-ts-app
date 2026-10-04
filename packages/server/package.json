@@ -1,0 +1,17 @@
+{
+  "name": "@crawl/server",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch & node dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@crawl/engine": "*",
+    "fastify": "^4.28.1",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/websocket": "^10.0.1",
+    "@fastify/static": "^7.0.4"
+  }
+}
